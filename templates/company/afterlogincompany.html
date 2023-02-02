@@ -1,0 +1,102 @@
+{% extends "company/base1.html" %} {% block body %}
+
+<div class="container-fluid">
+  <div class="row">
+    <nav
+      id="sidebar"
+      class="col-md-3 col-lg-2 d-md-block sidebar collapse"
+      style="background-color: #ac4343; height: 600px"
+    >
+      <div class="position-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">
+              <i class="fa-solid fa-prescription-bottle-medical"></i>
+              <span class="ml-2" style="color: black">add food</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="fa-solid fa-prescription-bottle-medical"></i>
+              <span class="ml-2" style="color: black">add blog</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="fa-solid fa-user-doctor"></i>
+              <span class="ml-2" style="color: black">add location</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">
+              <i class="fa-solid fa-user-doctor"></i>
+              <span class="ml-2" style="color: black">get reservations</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Overview</li>
+        </ol>
+      </nav>
+      <h1 class="h2">Dashboard</h1>
+      <p style="background-color: #add8e6">hello!{{request.user}}</p>
+      <div class="row my-4">
+        <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">
+          <div class="card">
+            <h5 class="card-header">Menu set</h5>
+            <div class="card-body">
+              <h5 class="card-title">50</h5>
+              <p class="card-text">Feb 1 - Apr 1</p>
+              <p class="card-text text-success">
+                18.2% increase since last month
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+          <div class="card">
+            <h5 class="card-header">reservations</h5>
+            <div class="card-body">
+              <h5 class="card-title">100</h5>
+              <p class="card-text">Feb 1 - Apr 1</p>
+              <p class="card-text text-success">
+                4.6% increase since last month
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+          <div class="card">
+            <h5 class="card-header">workers</h5>
+            <div class="card-body">
+              <h5 class="card-title">43</h5>
+              <p class="card-text">Feb 1 - Apr 1</p>
+              <p class="card-text text-danger">
+                2.6% decrease since last month
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 mb-4 mb-lg-0 col-lg-3">
+          <div class="card">
+            <h5 class="card-header">details</h5>
+            <div class="card-body">
+              <h5 class="card-title">1000</h5>
+              <p class="card-text">Feb 1 - Apr 1</p>
+              <p class="card-text text-success">
+                2.5% increase since last month
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+{% endblock %}

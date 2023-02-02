@@ -1,0 +1,38 @@
+{% extends 'company/base1.html' %} {% load crispy_forms_tags %} {% block body %}
+
+<section id="blog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 intro-text">
+        <h1>get response</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+          sint temporibus natus optio eveniet nobis accusantium?
+        </p>
+      </div>
+    </div>
+  
+    <div class="row gy-4">
+      {% for blog in blogs %}
+      
+      <div class="col-sm-6 p-2">
+        <div class="blog-post d-flex shadow-on-hover">
+          <div class="blog-post-content p-4">
+            <p>Name: {{blog.name}}</p>
+            <p>City: {{blog.city}}</p>
+            <p>No of people : {{blog.no_of_people}}</p>
+            <p>Mobile : {{blog.mobile}}</p>
+            <p>Email: {{blog.email}}</p>
+            <p>location: {{blog.location}}</p>
+         
+            <a class="btn btn-success btn-sm " href="{% url 'company:addfeedback' id=blog.id %}">send feedback</a>
+
+          </div>
+        </div>
+       
+      </div>
+      {%endfor%}
+  </div>
+</section>
+
+{% endblock %}

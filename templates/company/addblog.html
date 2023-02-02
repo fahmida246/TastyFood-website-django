@@ -1,0 +1,9 @@
+{% extends 'company/base1.html' %} {% load crispy_forms_tags %} {% block body%}
+<div class="container">
+  <h2>add blog:</h2>
+  <form method="POST" enctype="multipart/form-data">
+    {{form|crispy}} {% csrf_token %}
+    <button type="submit" class="btn btn-primary btn-sm">Login</button>
+  </form>
+</div>
+{% endblock %}
