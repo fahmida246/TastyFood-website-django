@@ -12,6 +12,12 @@ Customer type of user can see the menu and dishes and make a favourite list in t
 ![image](https://user-images.githubusercontent.com/76656865/220966070-0da9ad10-0c3e-4985-af4e-60d7d34e1261.png)
 ![image](https://user-images.githubusercontent.com/76656865/220966361-1ff823ec-9473-4881-91d8-5dbe347951b8.png)
 ![image](https://user-images.githubusercontent.com/76656865/220966626-f0dc44c0-4f24-4813-84d2-6988e7b687ca.png)
+![image](https://user-images.githubusercontent.com/76656865/220977644-7897cb48-41b1-4167-bd0a-5cf54939bc29.png)
+![image](https://user-images.githubusercontent.com/76656865/220978244-a0a424c9-15f2-4e54-bc0b-f5952c1e4524.png)
+![image](https://user-images.githubusercontent.com/76656865/220979673-ed3770eb-76c2-40fb-a989-6728c2ad4213.png)
+showfavourite:
+![image](https://user-images.githubusercontent.com/76656865/220979869-defba6c7-d3f3-46ac-a5d8-157915337a13.png)
+
 
 
 
